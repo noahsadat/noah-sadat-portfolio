@@ -7,9 +7,24 @@ import Header from "../components/Header";
 export const metadata: Metadata = {
   title: "Noah Sadat | Portfolio",
   description: "Personal portfolio of Noah Sadat - Frontend Developer | Content & PIM manager",
-  icons: {
-    icon: '/favicon.ico'
-  }
+  icons: [
+    {
+      rel: "icon",
+      type: "image/svg+xml",
+      url: "/logo.svg",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      url: "/logo.png",
+      sizes: "32x32",
+    },
+    {
+      rel: "apple-touch-icon",
+      url: "/logo.png",
+      sizes: "180x180",
+    },
+  ],
 };
 
 export default function RootLayout({

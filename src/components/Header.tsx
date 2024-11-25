@@ -28,7 +28,7 @@ const Header: React.FC = () => {
             key="logo" 
             title={<AvatarIcon />}
             isDisabled
-            className="px-2 opacity-100 cursor-default data-[disabled=true]:opacity-100"
+            className="px-2 opacity-100 data-[disabled=true]:opacity-100"
             />
             <Tab key="home" title="Home" />
             <Tab key="projects" title="Projects" />
