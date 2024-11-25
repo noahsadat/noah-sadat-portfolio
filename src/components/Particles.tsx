@@ -39,6 +39,7 @@ interface ParticlesProps {
   vx?: number;
   vy?: number;
 }
+
 function hexToRgb(hex: string): number[] {
   hex = hex.replace("#", "");
 
@@ -264,13 +265,13 @@ const Particles: React.FC<ParticlesProps> = ({
   return (
     <div
       className={cn(
-        "pointer-events-none [--particle-color:#212529] dark:[--particle-color:#adb5bd]", 
+        "w-full h-full pointer-events-none [--particle-color:#212529] dark:[--particle-color:#adb5bd]",
         className
       )}
       ref={canvasContainerRef}
       aria-hidden="true"
     >
-      <canvas ref={canvasRef} className="size-full" />
+      <canvas ref={canvasRef} className="w-full h-full" />
     </div>
   );
 };
