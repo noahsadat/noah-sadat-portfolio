@@ -3,28 +3,14 @@ import "./globals.css";
 import { Providers } from "./providers";
 import Particles from "../components/Particles"; // Corrected casing for import
 import Header from "../components/Header";
+import Dock from "@/components/Dock";
 
 export const metadata: Metadata = {
   title: "Noah Sadat | Portfolio",
   description: "Personal portfolio of Noah Sadat - Frontend Developer | Content & PIM manager",
-  icons: [
-    {
-      rel: "icon",
-      type: "image/svg+xml",
-      url: "/logo.svg",
-    },
-    {
-      rel: "icon",
-      type: "image/png",
-      url: "/logo.png",
-      sizes: "32x32",
-    },
-    {
-      rel: "apple-touch-icon",
-      url: "/logo.png",
-      sizes: "180x180",
-    },
-  ],
+  icons: {
+    icon: '/favicon.ico'
+  }
 };
 
 export default function RootLayout({
@@ -43,6 +29,7 @@ export default function RootLayout({
             <Providers>
               <Header />
               {children}
+              <Dock />
             </Providers>
           </div>
         </div>

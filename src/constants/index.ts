@@ -1,10 +1,10 @@
 export const PERSONAL_INFO = {
   name: "Noah Sadat",
   title: "Frontend Developer | Content & PIM manager",
-  email: "noah@sadat.info", // Replace with your email
-  github: "https://github.com/noahsadat", // Replace with your GitHub
-  linkedin: "https://linkedin.com/in/noahsadat", // Replace with your LinkedIn
-  // Add more social links or personal info as needed
+  email: "noah@sadat.info",
+  phone: "+49 176 41753925",
+  github: "https://github.com/noahsadat",
+  linkedin: "https://linkedin.com/in/noahsadat",
 };
 
 export const NAV_LINKS = [

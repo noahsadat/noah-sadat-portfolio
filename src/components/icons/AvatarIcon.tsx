@@ -8,7 +8,7 @@ export const AvatarIcon = () => {
         alt="Avatar"
         fill
         sizes="(max-width: 768px) 40px, 40px"
-        className="rounded-full object-cover"
+        className="rounded-full object-cover border-2 dark:border-dark-darkest border-light-darkest" // Assuming 'primary' is a Tailwind CSS class
       />
     </div>
   );

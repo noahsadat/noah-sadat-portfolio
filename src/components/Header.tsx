@@ -15,7 +15,7 @@ const Header: React.FC = () => {
             aria-label="Navigation tabs"
             color="default"
             variant="solid"
-            defaultSelectedKey="home"
+            defaultSelectedKey="about"
             classNames={{
               base: "p-0.5 rounded-full border border-light-darkest dark:border-dark-darkest",
               tabList: "gap-3 bg-transparent/5",
@@ -28,11 +28,10 @@ const Header: React.FC = () => {
             key="logo" 
             title={<AvatarIcon />}
             isDisabled
-            className="px-2 opacity-100 data-[disabled=true]:opacity-100"
+            className="px-2 opacity-100 !cursor-default data-[disabled=true]:opacity-100"
             />
-            <Tab key="home" title="Home" />
+            <Tab key="about" title="About" />
             <Tab key="projects" title="Projects" />
-            <Tab key="contact" title="Contact" />
           </Tabs>
         </nav>
       </div>
